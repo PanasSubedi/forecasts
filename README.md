@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Forecasts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+3. [Usage](#usage)
+4. [Screenshots](#screenshots)
+5. [Dependencies](#dependencies)
+6. [Technical Notes](#technical-notes)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+The app lets you view the forecasts for your city or any place in the world.
 
-### `yarn start`
+Using the application, you can:
+1. View the weather details of multiple places from the homepage.
+  - View hourly details for the current day.
+  - View daily details for up to a week.
+2. Add a city by clicking the + icon at the top.
+3. Add a place by choosing a latitude and longitude from a map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repo
 
-### `yarn test`
+2. In the project directory, install all the dependencies using:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  `yarn`
 
-### `yarn build`
+3. Run the project using:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  `yarn start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app runs on http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `yarn eject`
+The home page opens with your current city's forecast if you have enabled location. Here, you can:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. View hourly forecasts for the added cities.
+2. View daily forecasts for the added cities.
+3. Add new place by city name.
+4. Add new place from a map.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Home page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Home page](screenshots/homepage.png)
 
-## Learn More
+2. Add city
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Add city](screenshots/addcity.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Add place from map
 
-### Code Splitting
+![Map](screenshots/map.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Dependencies
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. @material-ui/core ^4.11.1
+2. @material-ui/icons ^4.11.2
+3. mapbox-gl
